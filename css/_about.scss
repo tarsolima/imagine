@@ -1,0 +1,115 @@
+#about {
+    background-color: #f6f6f6;
+  
+    h2 {
+      font-family:$serif;
+      text-align: center;
+      font-size: 2.8em;
+      font-weight: 300;
+      padding-top: 50px;
+      margin-bottom: 30px;
+    }
+  
+    .box4 {
+      @include flex(center, center);
+        margin: 0 auto 80px auto;
+
+      @media (max-width: 991px) {
+        flex-wrap: wrap;
+      }
+      
+      figure {
+        width: 89%;
+        text-align: center;
+          
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+  
+        img {
+          width: 80%;
+          margin:10px 0 80px 0;
+
+          @media (max-width: 500px) {
+            width: 100%;
+            padding: 0 10px;
+          }
+        }
+      }
+  
+      .text1 {
+        padding: 0 10px;
+        max-width: 37.5em;
+        
+        h3 {
+          font-family: $arial;
+          font-size: 1.5em;
+          font-weight: 600;
+          margin: 30px 0;
+
+          @media (max-width:768px) {
+            text-align: center;
+          }
+    
+        }
+    
+        p {
+          font-family: $roboto;
+          color: $colorgray;
+          font-size: 0.8em;
+          line-height: 1.5;
+          margin-bottom: 20px;
+          max-width: 50em;
+
+          @media (max-width: 768px) {
+            text-align: center;
+          }
+        }
+      }
+  
+      .alteracao {
+        @media (max-width:768px) {
+          display: table;
+          margin: 0 auto;
+        }
+        
+        ul {
+          margin-left: 23px;
+          margin-bottom: 40px;
+  
+  
+          li{
+            padding-left: 10px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            list-style-type: none;
+  
+            span {
+              color: #8bc34b;
+              margin-right: 10px;
+            }
+          }
+        }
+  
+        a {
+          font-family: $arial;
+          display: block;
+          width: 9.375em;
+          padding: 13px 0;
+          text-align: center;
+          background: $bg-color;
+          color: $white;
+          font-size: 0.9em;
+          line-height: 1.2;
+          border-radius: 20px;
+          margin: 0 auto 30px auto;
+          transition: all 0.3s;
+  
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 30px -5px rgba(66, 133, 244, 0.7);
+          }
+        }
+      }
+    }
+  }

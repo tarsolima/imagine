@@ -1,0 +1,156 @@
+#contentfeatures {
+  margin-top: 60px;
+  margin-bottom: 50px;
+
+
+  .text-features {
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-family:$serif;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 300;
+
+    @media (max-width: 456px) {
+      font-size: 2.25em;
+    }
+  }
+
+  p {
+    font-family: $roboto;
+    text-align: center;
+    color: $colorgray;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 15px 0 20px 0;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px, 350px));
+    justify-content: center;
+    gap: 15px;
+    margin: 100px auto 0 auto;
+
+    @media (max-width: 1120px) {
+      grid-template-columns: repeat(2, minmax(200px, 350px));
+    }
+
+    @media (max-width: 750px) {
+      grid-template-columns: repeat(1, minmax(200px, 350px));
+    }
+
+    @media (max-width: 380px) {
+      grid-template-columns: repeat(1, minmax(200px, 300px));
+    }
+
+    .box {
+      max-width: 21.875em;
+      background-color: #f1f1f1;
+      color: #000;
+      border-radius: 10px;
+      text-align: center;
+      padding: 50px 30px 40px;
+      margin: 0 10px 70px 10px;
+      margin-bottom: 70px;
+      position: relative;
+      transition: all 0.3s;  
+
+      h3 {
+        font-family: $roboto;
+        font-weight: 400;
+
+        &:hover > p:hover {
+          background: $bg-color;
+          color: $white;
+        }
+      }
+
+      p {
+        font-size: 0.9em;
+        transition: all 0.3s;
+      }
+
+      a {
+        color: #007bff;
+        transition: all 0.3s;
+      }
+
+      span {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: $bg-color;
+        position: absolute;
+        top: -42px;
+        left: 120px;
+        transition: all 0.3s;
+
+        @media (max-width: 380px) {
+          left: 95px;
+        }
+      }
+
+      .fas,
+      .far {
+        font-size: 2em;
+        position: absolute;
+        color: $white;
+        transition: all 0.3s;
+      }
+
+      .fa-sync-alt,
+      .fa-undo,
+      .fa-smile {
+        top: 31%;
+        left: 31%;
+      }
+
+      .fa-store-alt {
+        top: 31%;
+        left: 25%;
+      }
+
+      .fa-plug {
+        top: 31%;
+        left: 35%;
+      }
+
+      .fa-shopping-bag {
+        top: 31%;
+        left: 33%;
+      }
+
+      &:hover {
+        background: $bg-color;
+        color: $white;
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+      }
+
+      &:hover p {
+        color: $white;
+      }
+
+      &:hover a {
+        color: $white;
+      }
+
+      &:hover span {
+        background: $white;
+      }
+
+      &:hover .fas {
+        color:$bluehover;
+      }
+
+      &:hover .far {
+        color: $bluehover;
+      }
+    }
+  }
+}
