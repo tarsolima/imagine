@@ -1,18 +1,30 @@
-export default function initScroll() {
-    const scrollSuave = document.querySelectorAll('[data-scroll]');
-    const windowMetade = window.innerHeight * .8;
+export default class ScrollSuave {
+    constructor(scroll) {
+        this.scrollSuave = document.querySelectorAll(scroll);
+        this.windowMetade = window.innerHeight * .8;
+        this.eventClass = 'ativo';
+        this.startScroll = this.startScroll.bind(this);
+    }
 
-    function startScroll() {
-        scrollSuave.forEach((event) => {
+    startScroll() {
+        this.scrollSuave.forEach((event) => {
             const scroller = event.getBoundingClientRect().top;
-            const conta = (scroller - windowMetade) < 0;
+            const conta = (scroller - this.windowMetade) < 0;
             if(conta) {
-                event.classList.add('ativo');
+                event.classList.add(this.eventClass);
             }
         });
     }
 
-    startScroll();
+    addEvent() {
+        this.startScroll();
+        window.addEventListener('scroll', this.startScroll);
+    }
 
-    window.addEventListener('scroll', startScroll);
+    init() {
+        if (this.scrollSuave.length) {
+            this.addEvent();
+        }
+        return this;
+    }
 }

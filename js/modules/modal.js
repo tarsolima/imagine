@@ -1,21 +1,39 @@
-export default function startModal() {
-    const abrirModal = document.querySelector('[data-modal="abrir"]');
-    const fecharModal = document.querySelector('[data-modal="fechar"]');
-    const modalContainer = document.querySelector('[data-modal="container"]');
-
-    function initModal(event) {
-        event.preventDefault();
-        modalContainer.classList.toggle('active');
+export default class Modal {
+    constructor(open, close, container) {
+        this.abrirModal = document.querySelector(open);
+        this.fecharModal = document.querySelector(close);
+        this.modalContainer = document.querySelector(container);
+        
+        this.eventContainer = this.eventContainer.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
 
-    function closeModal(event){ 
+    initModal() {
+        this.modalContainer.classList.toggle('active');
+    }
+
+    eventContainer(event) {
         event.preventDefault();
-        if(event.target === this) {
-            initModal(event);
+        this.initModal();
+    }
+
+    closeModal(event){ 
+        event.preventDefault();
+        if (event.target === this.modalContainer) {
+            this.initModal(event);
         }
     }
 
-    abrirModal.addEventListener('click', initModal);
-    fecharModal.addEventListener('click', initModal);
-    modalContainer.addEventListener('click', closeModal);
+    addEvent() {
+        this.abrirModal.addEventListener('click', this.eventContainer);
+        this.fecharModal.addEventListener('click', this.eventContainer);
+        this.modalContainer.addEventListener('click', this.closeModal);    
+    }
+
+    init() {
+        if (this.abrirModal && this.fecharModal && this.modalContainer) {
+            this.addEvent();
+        }
+        return this;
+    }
 }
