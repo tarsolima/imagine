@@ -3,8 +3,8 @@ header {
     height: 60px;
     background-color: $white;
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
+    // position: fixed;
+    // top: 0;
     z-index: 1;
   }  
 #cabecalho {
@@ -53,6 +53,25 @@ header {
 
           &:hover {
             color:$color;
+          }
+        }
+
+        .highlight {
+          font-family: Arial,Helvetica,sans-serif;
+          display: inline-block;
+          padding: 13px 30px;
+          background: #4285f4;
+          color: #fff;
+          font-weight: bold;
+          font-size: .9em;
+          line-height: 1.2;
+          border-radius: 20px;
+          transition: all .3s;
+
+          &:hover {
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 30px -5px rgba(66,133,244,.7);
           }
         }
       }

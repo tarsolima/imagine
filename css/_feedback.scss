@@ -2,7 +2,7 @@
 .box3 {
   @include flex(center, center);
   padding: 0 10px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 
   @media (max-width: 425px) {
     margin-left: 5px;
@@ -81,6 +81,10 @@
       }
     }
   }
+}
+
+.box2 {
+  margin-top: -20px;
 }
 
 .box3 {

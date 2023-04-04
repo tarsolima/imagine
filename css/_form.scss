@@ -1,8 +1,7 @@
 .bg {
-    background-image: url(../img/hero_1.jpg);
+    background: url('../img/hero_1.jpg') no-repeat center center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
     position: relative;
   
     &::before {
@@ -16,7 +15,7 @@
   }
 
   #contact {
-    padding-bottom: 120px;
+    padding-bottom: 50px;
     margin-bottom: 20px;
     position: relative;
   
