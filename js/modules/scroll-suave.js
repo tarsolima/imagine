@@ -1,30 +1,27 @@
 export default class ScrollSuave {
-    constructor(scroll) {
-        this.scrollSuave = document.querySelectorAll(scroll);
-        this.windowMetade = window.innerHeight * .8;
-        this.eventClass = 'ativo';
-        this.startScroll = this.startScroll.bind(this);
+    constructor(links, option) {
+      this.linksInternos = document.querySelectorAll(links);
+      this.option = option || { behavior: 'smooth', block: 'start' };
+  
+      this.scrollToSection = this.scrollToSection.bind(this);
     }
-
-    startScroll() {
-        this.scrollSuave.forEach((event) => {
-            const scroller = event.getBoundingClientRect().top;
-            const conta = (scroller - this.windowMetade) < 0;
-            if(conta) {
-                event.classList.add(this.eventClass);
-            }
-        });
+  
+    scrollToSection(event) {
+      event.preventDefault();
+      const href = event.currentTarget.getAttribute('href');
+      const section = document.querySelector(href);
+      section.scrollIntoView(this.option);
     }
-
+  
     addEvent() {
-        this.startScroll();
-        window.addEventListener('scroll', this.startScroll);
+      this.linksInternos.forEach(link => link.addEventListener('click', this.scrollToSection));
     }
-
+  
     init() {
-        if (this.scrollSuave.length) {
-            this.addEvent();
-        }
-        return this;
+      if (this.linksInternos.length) {
+        this.addEvent();
+      }
+      return this;
     }
-}
+  }
+  

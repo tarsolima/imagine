@@ -9,12 +9,13 @@
     background: #fff;
     border: 2px solid #4285f4;
     padding: 5px 5px 15px 5px;
+    z-index: 1;
 }
 
 [data-dropdown]:hover #dropdown-menu,
 [data-dropdown].active #dropdown-menu{
     display: block;
-    animation: initdropdown .5s forwards;
+    animation: initdropdown .2s forwards;
 }
 
 @keyframes initdropdown {
@@ -53,15 +54,21 @@
 @media (max-width: 730px) {
     #dropdown-menu {
         position: static;
-        border: none;
+        margin-top: 11px;
         padding-bottom: 0px;
+        display: block;
 
         &::before {
-            border: none;
+            top: 19px;
         }
 
         #dropdown {
             margin-top: 5px;
         }
+    }
+
+    [data-dropdown]:hover #dropdown-menu,
+    [data-dropdown].active #dropdown-menu{
+        animation: none;
     }
 }

@@ -1,10 +1,11 @@
-import ScrollSuave from './modules/scroll-suave.js';
+import AnimaScroll from './modules/anima-scroll.js';
 import Dropdown from './modules/dropdown.js';
 import Modal from './modules/modal.js';
 import MenuMobile from './modules/menu-mobile.js';
+import ScrollSuave from './modules/scroll-suave.js';
 
-const scrollSuave = new ScrollSuave('[data-scroll]');
-scrollSuave.init();
+const animaScroll = new AnimaScroll('[data-scroll]');
+animaScroll.init();
 
 const dropdown = new Dropdown('[data-dropdown]');
 dropdown.init();
@@ -14,3 +15,6 @@ modal.init()
 
 const menuMobile = new MenuMobile('[data-menu]', '[data-menuList]');
 menuMobile.init();
+
+const scrollSuave = new ScrollSuave('[data-menulist] a[href^="#"]');
+scrollSuave.init();
