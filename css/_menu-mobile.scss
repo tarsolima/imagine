@@ -2,6 +2,12 @@
     display: none;
 }
 
+[data-menuList] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 730px) {
     [data-menu] {
         display: flex;

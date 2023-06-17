@@ -1,21 +1,4 @@
-$white: #fff;
-$bg-color: #4285f4;
-$color: $bg-color;
-$border-color: $bg-color;
-$bluehover: #007bff;
-$colorgray: #6c757d;
-
-
-$arial: Arial, Helvetica, sans-serif;
-$serif: sans-serif;
-$roboto: "Roboto";
-
-@mixin flex($justify, $algitems: stretch) {
-  display: flex;
-  justify-content: $justify ;
-  align-items: $algitems;
-}
-
+@import 'geral';
 @import 'header';
 @import 'home';
 @import 'features';
@@ -27,12 +10,3 @@ $roboto: "Roboto";
 @import 'drop-menu';
 @import 'modal';
 @import 'menu-mobile';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  outline: none;
-}

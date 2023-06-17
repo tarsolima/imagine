@@ -16,5 +16,5 @@ modal.init()
 const menuMobile = new MenuMobile('[data-menu]', '[data-menuList]');
 menuMobile.init();
 
-const scrollSuave = new ScrollSuave('[data-menulist] a[href^="#"]');
+const scrollSuave = new ScrollSuave('header a[href^="#"]');
 scrollSuave.init();

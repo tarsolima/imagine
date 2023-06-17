@@ -12,8 +12,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
     "dev": "webpack --mode development --watch",
@@ -28,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/tarsolima/LandingPageJs-2/issues"
   },
-  "homepage": "https://github.com/tarsolima/LandingPageJs-2#readme"
+  "homepage": "https://github.com/tarsolima/LandingPageJs-2#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "keywords": []
 }
