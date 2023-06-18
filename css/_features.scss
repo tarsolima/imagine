@@ -12,7 +12,7 @@
     font-weight: 300;
 
     @media (max-width: 486px) {
-      font-size: 2.25em;
+      font-size: 2.25rem;
     }
   }
 
@@ -32,6 +32,10 @@
     justify-content: center;
     gap: 15px;
     margin: 80px auto 0 auto;
+
+    @media (max-width: 365px) {
+      grid-template-columns: repeat(1, 300px);
+    }
 
     .box {
       background-color: #f1f1f1;
@@ -74,9 +78,9 @@
         left: 123px;
         transition: all 0.3s;
 
-        // @media (max-width: 380px) {
-        //   left: 95px;
-        // }
+        @media (max-width: 365px) {
+          left: 98px;
+        }
       }
 
       .fas,
