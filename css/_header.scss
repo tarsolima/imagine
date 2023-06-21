@@ -16,7 +16,7 @@ header {
   h1 {
     font-family: $arial;
     font-weight: lighter;
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0 0 8px 10px;
 
     a {
@@ -38,8 +38,8 @@ header {
 
         a {
           padding: 10px;
-          font-size: 1em;
-          font-family:$serif;
+          font-size: 1rem;
+          font-family: $arial;
           text-decoration: none;
           color: #000;
           transition: all 0.3s;
@@ -60,7 +60,7 @@ header {
           background: #4285f4;
           color: #fff;
           font-weight: bold;
-          font-size: .9em;
+          font-size: .9rem;
           line-height: 1.2;
           border-radius: 20px;
           transition: all .3s;

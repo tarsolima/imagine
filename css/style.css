@@ -28,7 +28,7 @@ header {
 #cabecalho h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0 0 8px 10px;
 }
 #cabecalho h1 a {
@@ -47,8 +47,8 @@ header {
 }
 #cabecalho nav ul li a {
   padding: 10px;
-  font-size: 1em;
-  font-family: sans-serif;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: #000;
   transition: all 0.3s;
@@ -68,7 +68,7 @@ header {
   background: #4285f4;
   color: #fff;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   line-height: 1.2;
   border-radius: 20px;
   transition: all 0.3s;
@@ -89,19 +89,12 @@ header {
 #first .titulo {
   margin-right: 30px;
   padding: 0 10px;
-  max-width: 440px;
+  max-width: 460px;
 }
 @media (max-width: 486px) {
   #first .titulo {
     margin: 0;
   }
-}
-#first .titulo h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.7rem;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 5px;
 }
 @media (max-width: 486px) {
   #first .titulo h1 {
@@ -114,8 +107,9 @@ header {
   }
 }
 #first .titulo p {
-  color: #6c757d;
+  color: #3f4348;
   font-size: 1rem;
+  line-height: 1.5;
   font-weight: 300;
 }
 #first .titulo a {
@@ -126,7 +120,7 @@ header {
   background: #4285f4;
   color: #fff;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 1.2;
   border-radius: 20px;
   transition: all 0.3s;
@@ -153,10 +147,11 @@ header {
   margin: 0 auto;
 }
 #contentfeatures h2 {
-  font-family: sans-serif;
+  font-weight: 300;
   text-align: center;
   font-size: 2.8rem;
-  font-weight: 300;
+  color: #252525;
+  font-family: "Roboto", sans-serif;
 }
 @media (max-width: 486px) {
   #contentfeatures h2 {
@@ -164,7 +159,7 @@ header {
   }
 }
 #contentfeatures p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
   color: #6c757d;
   font-size: 1rem;
@@ -195,7 +190,7 @@ header {
   transition: all 0.3s;
 }
 #contentfeatures .features .box h3 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 #contentfeatures .features .box h3:hover > p:hover {
@@ -203,7 +198,7 @@ header {
   color: #fff;
 }
 #contentfeatures .features .box p {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   transition: all 0.3s;
 }
 #contentfeatures .features .box a {
@@ -228,7 +223,7 @@ header {
 }
 #contentfeatures .features .box .fas,
 #contentfeatures .features .box .far {
-  font-size: 2em;
+  font-size: 2rem;
   position: absolute;
   color: #fff;
   transition: all 0.3s;
@@ -303,13 +298,15 @@ header {
 }
 .box2 .box-text-feedback h2,
 .box3 .box-text-feedback h2 {
-  font-family: "Roboto";
-  font-size: 2.5rem;
-  line-height: 1.2;
   font-weight: 600;
+  text-align: start;
+  font-size: 2.5rem;
+  color: #252525;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
-@media (max-width: 456px) {
+@media (max-width: 486px) {
   .box2 .box-text-feedback h2,
   .box3 .box-text-feedback h2 {
     font-size: 2.25rem;
@@ -317,7 +314,7 @@ header {
 }
 .box2 .box-text-feedback p,
 .box3 .box-text-feedback p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #6c757d;
   font-size: 1rem;
   line-height: 1.5;
@@ -359,7 +356,7 @@ header {
 .box3 .box-text-feedback .minbox cite {
   display: block;
   color: #6c757d;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.5;
   padding-left: 5px;
 }
@@ -373,11 +370,17 @@ header {
   padding: 20px 0 30px 0;
 }
 #about h2 {
-  font-family: sans-serif;
+  font-weight: 300;
   text-align: center;
   font-size: 2.8rem;
-  font-weight: 300;
+  color: #252525;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
+}
+@media (max-width: 486px) {
+  #about h2 {
+    font-size: 2.25rem;
+  }
 }
 #about .box4 {
   display: flex;
@@ -418,7 +421,7 @@ header {
   }
 }
 #about .box4 .box-text-about p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #6c757d;
   font-size: 0.8rem;
   line-height: 1.5;
@@ -443,7 +446,7 @@ header {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   text-align: center;
   color: #fff;
   background: #4285f4;
@@ -466,18 +469,19 @@ header {
   margin: 0 auto 20px auto;
 }
 #team .text-ourteam h2 {
-  font-family: sans-serif;
+  font-weight: 300;
   text-align: center;
   font-size: 2.8rem;
-  font-weight: 300;
+  color: #252525;
+  font-family: "Roboto", sans-serif;
 }
-@media (max-width: 456px) {
+@media (max-width: 486px) {
   #team .text-ourteam h2 {
     font-size: 2.25rem;
   }
 }
 #team .text-ourteam p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
   color: #6c757d;
   font-size: 1rem;
@@ -508,7 +512,7 @@ header {
   margin: 10px 0 5px 0;
 }
 #team .team .cargo {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   color: #4285f4;
   margin-bottom: 8px;
 }
@@ -539,12 +543,19 @@ header {
   position: relative;
 }
 #contact h2 {
-  font-family: sans-serif;
+  font-weight: 300;
   text-align: center;
   font-size: 2.5rem;
+  color: #252525;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
   padding-top: 50px;
   color: #fff;
+}
+@media (max-width: 486px) {
+  #contact h2 {
+    font-size: 2.25rem;
+  }
 }
 #contact .contactform {
   max-width: 45em;
@@ -803,7 +814,7 @@ header {
   background: #4285f4;
   box-shadow: 0 0 0 4px #fff;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   cursor: pointer;
 }
 
@@ -821,7 +832,7 @@ header {
   padding-left: 10px;
   border: 1px solid #ced4da;
   color: #495057;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.5;
   border-radius: 5px;
   transition: all 0.3s;
@@ -839,7 +850,7 @@ header {
   border: none;
   background: #4285f4;
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   line-height: 1.2;
   border-radius: 20px;
   cursor: pointer;
@@ -869,7 +880,7 @@ header {
     background: #4285f4;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     line-height: 1.2;
     border-radius: 5px;
     border: none;

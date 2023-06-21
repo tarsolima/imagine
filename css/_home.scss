@@ -6,7 +6,7 @@
   .titulo {
     margin-right: 30px;
     padding: 0 10px;
-    max-width: 440px;
+    max-width: 460px;
 
     @media (max-width: 486px) {
       margin: 0;
@@ -14,9 +14,10 @@
 
     h1 {
       font-family: $arial;
-      font-size: 2.7rem;
+      font-size: 2.8rem;
       line-height: 1.2;
       font-weight: 700;
+      color: $headings;
       margin-bottom: 5px;
 
       @media (max-width: 486px) {
@@ -29,8 +30,9 @@
     }
 
     p {
-      color: $colorgray;
+      color: $paragraph-color;
       font-size: 1rem;
+      line-height: 1.5;
       font-weight: 300;
     }
 
@@ -42,7 +44,7 @@
       background: $bg-color;
       color: $white;
       font-weight: bold;
-      font-size: 0.8em;
+      font-size: 0.8rem;
       line-height: 1.2;
       border-radius: 20px;
       transition: all 0.3s;
