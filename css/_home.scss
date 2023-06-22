@@ -17,7 +17,7 @@
       font-size: 2.8rem;
       line-height: 1.2;
       font-weight: 700;
-      color: $headings;
+      color: $headings-color;
       margin-bottom: 5px;
 
       @media (max-width: 486px) {
@@ -30,24 +30,12 @@
     }
 
     p {
-      color: $paragraph-color;
-      font-size: 1rem;
-      line-height: 1.5;
-      font-weight: 300;
+      @include paragraphs(1rem, start);
     }
 
     a {
-      font-family: $arial;
-      display: inline-block;
-      margin-top: 30px;
-      padding: 13px 30px;
-      background: $bg-color;
-      color: $white;
-      font-weight: bold;
-      font-size: 0.8rem;
-      line-height: 1.2;
-      border-radius: 20px;
-      transition: all 0.3s;
+      @include buttons;
+      margin-top: 20px;
 
       &:hover {
         transform: translateY(-2px);

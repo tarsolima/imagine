@@ -1,73 +1,73 @@
 [data-menu] {
-    display: none;
+  display: none;
 }
 
 [data-menuList] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 730px) {
-    [data-menu] {
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding: 15px 20px;
-        background: #4285f4;
-        color: #fff;
-        font-family: Arial,Helvetica,sans-serif;
-        font-size: 0.9rem;
-        line-height: 1.2;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        margin: 0 15px 10px 0;
-        z-index: 2;
+  [data-menu] {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 15px 20px;
+    background: #4285f4;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px 10px 0;
+    z-index: 2;
 
-        &::before {
-            content: '';
-            display: inline-block;
-            height: 2px;
-            width: 10px;
-            background: #fff;
-            box-shadow: 0 4px #fff, 0 -4px #fff;
-            margin-right: 5px;
-            transition: all .3s;
-        }
-
-        &.active::before {
-            transform: rotate(90deg);
-        }
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 10px;
+      background: #fff;
+      box-shadow: 0 4px #fff, 0 -4px #fff;
+      margin-right: 5px;
+      transition: all 0.3s;
     }
 
-    [data-menuList] {
-        position: absolute;
-        display: none;
-        right: 0px;
-        top: 0;
-        width: 127px;
-        padding: 70px 10px 20px 10px;
-        background: #fff;
-        box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
-        border-radius: 5px;
-        z-index: 1;
-
-        &.active {
-            display: block;
-            animation: show-menu 0.5s forwards;
-        }
-
-        @keyframes show-menu {
-            from {
-                opacity: 0;
-                transform: translate3d(30px, 0, 0);
-            }
-
-            to {
-                opacity: 1;
-                transform: translate3d(0px, 0, 0);
-            }
-        }
+    &.active::before {
+      transform: rotate(90deg);
     }
+  }
+
+  [data-menuList] {
+    position: absolute;
+    display: none;
+    right: 0px;
+    top: 0;
+    width: 127px;
+    padding: 70px 10px 20px 10px;
+    background: #fff;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+
+    &.active {
+      display: block;
+      animation: show-menu 0.5s forwards;
+    }
+
+    @keyframes show-menu {
+      from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0px, 0, 0);
+      }
+    }
+  }
 }

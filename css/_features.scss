@@ -15,12 +15,8 @@
     }
   }
 
-  p {
-    font-family: $roboto;
-    text-align: center;
-    color: $colorgray;
-    font-size: 1rem;
-    line-height: 1.5;
+  .paragraph-feature {
+    @include paragraphs();
     margin: 15px 0 20px 0;
   }
 
@@ -44,7 +40,7 @@
       padding: 50px 30px 40px;
       margin: 0 10px 50px 10px;
       position: relative;
-      transition: all 0.3s;  
+      transition: all 0.3s;
 
       h3 {
         font-family: $roboto;
@@ -52,12 +48,13 @@
 
         &:hover > p:hover {
           background: $bg-color;
-          color: $white;
+          color: #fff;
         }
       }
 
-      p {
-        font-size: 0.9rem;
+      .text-box-feature {
+        @include paragraphs(0.9rem);
+        margin: 15px 0 20px 0;
         transition: all 0.3s;
       }
 
@@ -86,7 +83,7 @@
       .far {
         font-size: 2rem;
         position: absolute;
-        color: $white;
+        color: #fff;
         transition: all 0.3s;
       }
 
@@ -114,21 +111,23 @@
 
       &:hover {
         background: $bg-color;
-        color: $white;
+        color: #fff;
         transform: translateY(-10px);
         box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
       }
 
-      &:hover p, &:hover a {
-        color: $white;
+      &:hover p,
+      &:hover a {
+        color: #fff;
       }
 
       &:hover span {
-        background: $white;
+        background: #fff;
       }
 
-      &:hover .fas, &:hover .far {
-        color:$bluehover;
+      &:hover .fas,
+      &:hover .far {
+        color: $bluehover;
       }
     }
   }

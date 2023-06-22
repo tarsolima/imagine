@@ -1,7 +1,7 @@
 #team {
   padding: 30px 0;
 
-  .text-ourteam {
+  .box-ourteam {
     padding: 0 10px;
     max-width: 500px;
     margin: 0 auto 20px auto;
@@ -14,13 +14,8 @@
       }
     }
 
-    p {
-      font-family: $roboto;
-      text-align: center;
-      color: $colorgray;
-      font-size: 1rem;
-      font-weight: 300;
-      line-height: 1.5;
+    .text-team {
+      @include paragraphs();
       margin: 15px 0 0 0;
     }
   }
@@ -44,6 +39,7 @@
     }
 
     h3 {
+      color: #252525;
       font-family: "sans-serif";
       margin: 10px 0 5px 0;
     }
@@ -54,10 +50,8 @@
       margin-bottom: 8px;
     }
 
-    p {
-      color: #808080;
-      font-size: 1rem;
-      line-height: 1.5;
+    .text-people {
+      @include paragraphs(0.9rem, start);
     }
   }
 }

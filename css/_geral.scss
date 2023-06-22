@@ -7,15 +7,17 @@
     outline: none;
 }
 
-$white: #fff;
 $bg-color: #4285f4;
 $color: $bg-color;
 $border-color: $bg-color;
 $bluehover: #007bff;
-$colorgray: #6c757d;
 
 $headings-color: #252525;
 $paragraph-color: #3f4348;
+$cite-color: #4c5d67;
+
+$button-background: #4285f4; 
+$button-color: #fff;
 
 $arial: Arial, Helvetica, sans-serif;
 $roboto: 'Roboto', sans-serif;
@@ -32,4 +34,24 @@ $roboto: 'Roboto', sans-serif;
   font-size: $fontSize;
   color: $color;
   font-family: $fontFamily;
+}
+
+@mixin paragraphs($fontSize: 1rem, $textAlign: center, $color: $paragraph-color, $fontFamily: $arial, ) {
+  font-size: $fontSize;
+  text-align: $textAlign;
+  color: $color;
+  font-family: $fontFamily;
+  line-height: 1.5;
+}
+
+@mixin buttons($fontSize: .9rem, $fontFamily: $arial, $background: $button-background, $color: $button-color ) {
+  display: inline-block;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  background: $background;
+  color: $color;
+  padding: 13px 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all .3s;
 }

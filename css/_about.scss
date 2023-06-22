@@ -5,7 +5,7 @@
   h2 {
     @include headings2();
     margin-bottom: 30px;
-    
+
     @media (max-width: 486px) {
       font-size: 2.25rem;
     }
@@ -47,11 +47,8 @@
         }
       }
 
-      p {
-        font-family: $roboto;
-        color: $colorgray;
-        font-size: 0.8rem;
-        line-height: 1.5;
+      .text-about {
+        @include paragraphs(0.8rem, start);
         margin-bottom: 20px;
       }
     }
@@ -64,6 +61,7 @@
         margin-bottom: 20px;
 
         li {
+          color: #3f4348;
           padding-left: 10px;
           margin-bottom: 15px;
 
@@ -75,17 +73,8 @@
       }
 
       a {
-        display: inline-block;
-        font-family: $arial;
-        font-weight: bold;
-        font-size: 0.9rem;
-        text-align: center;
-        color: $white;
-        background: $bg-color;
+        @include buttons;
         margin-left: 25px;
-        padding: 15px 30px;
-        border-radius: 50px;
-        transition: all 0.3s;
 
         &:hover {
           transform: translateY(-2px);

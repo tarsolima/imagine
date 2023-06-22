@@ -23,7 +23,7 @@
       @include headings2(300, center, 2.5rem);
       margin-bottom: 30px;
       padding-top: 50px ;
-      color: $white;
+      color: #fff;
 
       @media (max-width: 486px) {
         font-size: 2.25rem;
@@ -32,7 +32,7 @@
 
     .contactform {
       max-width: 45em;
-      background: $white;
+      background: #fff;
       margin: 0 auto;
       padding: 30px;
       border-radius: 5px;
@@ -91,6 +91,7 @@
         }
 
         label {
+          user-select: none;
           margin: 10px 0;
         }
 
@@ -128,12 +129,12 @@
         [type=submit] {
         font-family: $arial;
         display: inline-block;
-        width: 9.375em;
         margin: 30px 0 0 0;
         padding: 13px 0;
+        width: 9.375em;
         border: none;
         background: $bg-color;
-        color: $white;
+        color: #fff;
         font-size: 0.9rem;
         line-height: 1.2;
         border-radius: 20px;
@@ -152,7 +153,7 @@
   .abner {
     font-size: 1rem;
     text-align: center;
-    color:#808080;
+    color:#3f4348;
     margin-bottom: 10px;
     padding: 0 10px;
   }

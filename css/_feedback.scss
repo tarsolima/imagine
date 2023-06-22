@@ -5,7 +5,7 @@
 
   @media (max-width: 1096px) {
     flex-wrap: wrap;
-    flex-direction: column;;
+    flex-direction: column;
   }
 
   figure {
@@ -35,11 +35,8 @@
       }
     }
 
-    p {
-      font-family: $roboto;
-      color: $colorgray;
-      font-size: 1rem;
-      line-height: 1.5;
+    .paragraph-feedback {
+      @include paragraphs(1rem, start);
     }
 
     .minbox {
@@ -67,6 +64,7 @@
         display: inline-block;
 
         .name {
+          color: #252525;
           font-size: 1.2rem;
           line-height: 1.5;
         }
@@ -74,7 +72,7 @@
 
       cite {
         display: block;
-        color: $colorgray;
+        color: $cite-color;
         font-size: 1rem;
         line-height: 1.5;
         padding-left: 5px;
