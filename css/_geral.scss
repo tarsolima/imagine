@@ -7,6 +7,10 @@
     outline: none;
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
 $bg-color: #4285f4;
 $color: $bg-color;
 $border-color: $bg-color;

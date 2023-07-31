@@ -1,7 +1,7 @@
-#first {
+.main-home {
   @include flex(center, center);
   flex-wrap: wrap;
-  padding: 60px 0;
+  padding: 100px 0 60px 0;
 
   .titulo {
     margin-right: 30px;
